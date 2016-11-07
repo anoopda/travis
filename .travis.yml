@@ -8,6 +8,6 @@ node_js:
 script: jasmine test.js
 
 install: package.json
-sudo:required
+sudo: required
 
 
