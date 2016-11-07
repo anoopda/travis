@@ -4,7 +4,7 @@ import $ from 'jquery';
 import UserTile from './UserTile.jsx';
 
 
-xport default class extends React.Component {
+ default class extends React.Component {
 
 
 
