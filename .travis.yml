@@ -7,7 +7,7 @@ node_js:
 
 script: jasmine test.js
 
-install: package.json
+install: npm install
 sudo: required
 
 
