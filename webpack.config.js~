@@ -4,6 +4,12 @@ module.exports = {
         path: __dirname + '/public/build/',
         filename: "bundle.js"
     },
+
+    eslint: {
+    configFile: './.eslintrc.js'
+    },
+
+
     module: {
         loaders: [
             {
@@ -13,19 +19,22 @@ module.exports = {
             {
               test: /\.jsx$/,
               exclude: /node_modules/,
-              loader: 'babel',
+              loader: 'babel-loader',
               query: {
                 presets: ['es2015', 'react']
               }
-            }
+            },
+             {
+               test: /\.js$/,
+               exclude: /node_modules/,
+               loader: 'eslint-loader'
+    }
         ]
     },
 
     resolve: {
      extensions: [ '', '.js', '.json', '.jsx', '.es6', '.babel', '.node'],
   },
-
-
 
   node: {
     console: true,

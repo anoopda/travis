@@ -5,9 +5,15 @@ node_js:
   - "6.1"
   - "5.11"
 
+<<<<<<< HEAD
 script: jasmine test.js
 
 install: npm install
 sudo: required
+=======
+
+script: jasmine test.js
+
+>>>>>>> 54d8f420e94e3544fab6ce52dc1e693dcf3419ea
 
 
