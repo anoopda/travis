@@ -15,7 +15,6 @@ before_script:
 script: 
   - jasmine test.js
 
-
 after_success:
-  - firebase deploy --token=${FIREBASE_API_TOKEN}
+  - firebase deploy 
 
