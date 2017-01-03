@@ -37,7 +37,7 @@ console.log(this.state);
 componentWillMount() {
 this.setState({data:[],loading:false});
 	$.ajax({
-    url: "http://localhost:8085/json/list.json",
+    url: "../json/list.json",
     dataType: "json",
     success : function(val){
      this.setState({data:val,loading:true});

@@ -114,7 +114,7 @@
 	    value: function componentWillMount() {
 	      this.setState({ data: [], loading: false });
 	      _jquery2.default.ajax({
-	        url: "http://localhost:8085/json/list.json",
+	        url: "../json/list.json",
 	        dataType: "json",
 	        success: function (val) {
 	          this.setState({ data: val, loading: true });
